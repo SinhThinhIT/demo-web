@@ -1,0 +1,1374 @@
+@font-face {
+    font-family: 'Roboto_Regular';
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMHelvetIns';
+    src: url('../fonts/UTMHelvetIns.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMHelvetIns.woff') format('woff'), url('../fonts/UTMHelvetIns.ttf') format('truetype'), url('../fonts/UTMHelvetIns.svg#UTMHelvetIns') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu_header {
+    /*min-height: 45px;*/
+    /* background-image: url("../img/bg_banner.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding-top: 50px; */
+}
+
+.content_top {
+    background-color: #fff;
+    height: 70px;
+    z-index: 10;
+    position: relative;
+}
+
+.d_flex,
+.d_flex_base {
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    /*width: 100%;*/
+}
+
+.content_top .d_flex_base {
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo_pc {
+    width: 200px;
+}
+
+.img_head {
+    margin-left: 0;
+}
+
+a.logo_pc img {
+
+    max-height: 70px !important;
+}
+
+.wraper_medium {
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-negative: 1;
+    -ms-flex-preferred-size: auto !important;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.col_medium {
+    padding: 0;
+    border-left: 1px solid #ececec;
+}
+
+.col_medium:first-child {
+    border-left: none;
+}
+
+.box_icon_header {
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: left;
+}
+
+.icon_img_top {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    max-width: 200px;
+    width: 35px;
+}
+
+.icon_img_top img {
+    padding-top: 0.2em;
+    width: 100%;
+}
+
+.text_icon_top {
+    padding-left: 1em;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0px;
+}
+
+.text_icon_top span {
+    font-size: 12px;
+}
+
+.image_lang ul.d_flex {
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.image_lang .search_drop {
+    position: relative;
+    margin-top: 0px;
+    padding-left: 10px !important;
+}
+
+.image_lang ul li {
+    margin: 0 13px;
+}
+
+.image_lang ul li a i {
+    color: #666666;
+    font-size: 22px;
+}
+
+
+/* ------------------------------------------------------------- */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+
+/* ---------------------------------------------------- */
+.slider_tax_product .swiper-slide .box_item {
+    padding: 30px 30px;
+}
+.slider_tax_product .swiper-slide .box_item {
+    margin: 0 7.5%;
+    width: 85% !important;
+    transform: scale(.8);
+    transition: 1s all;
+    text-align: center;
+    /* padding: 50px 0; */
+}
+.slider_tax_product .swiper-slide .box_item  h3{
+    display: none;
+    text-shadow: 2px 2px 0 rgb(0 0 0 / 24%);
+    color: #ffffff;
+    font-family: 'UTM Flavour';
+    font-size: 28px;
+    display: inline-block;
+    opacity: 0;
+    transition: 1s all;
+    position: relative;
+    z-index: 1;
+}
+.slider_tax_product .swiper-slide.swiper-slide-active .box_item .img-item-slider-1{
+    transform: scale(1.6);
+    transition: 0.5s;
+    margin-bottom: 69px;
+}
+
+.slider_tax_product .swiper-slide.swiper-slide-active .box_item h3{
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.slider_tax_product .swiper-slide.swiper-slide-active .box_item h3:before {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: url("https://meizanclv.com.vn/wp-content/themes/canhcam/images/bg_title.png");
+    z-index: -1;
+}
+
+
+.bg_nabar_top {
+    background: #FFF;
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 5px #bbb; */
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagewrap {
+    display: flex;
+    align-items: center;
+}
+
+.item-dangky-dangnhap{
+    width: 110px;
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dangky-dangnhap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.dangky-dangnhap a{
+    color: white;
+}
+
+.dangky:hover {
+    background-color: #21a251;
+}
+
+.dangnhap:hover {
+    background-color: #21a251;
+}
+
+.dangky{
+    background-color: #21a251;
+}
+.dangnhap{
+    background-color: #21a251;
+}
+
+.box-header h3 {
+    font-size: 30px;
+    color: #1a1a1e;
+    line-height: 44px;
+    margin-top: 100px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box-list-about {
+    padding-left: 15px;
+    min-height: 280px;
+    margin-top: 0px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.box-list-about ul li {
+    color: #1a1a1e;
+    font-size: 20px;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+.box-list-about ul .btn-submit {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #21a251;
+    width: 260px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 22px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.banner{
+    background-image: url("../img/bg_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.whylike_title {
+    text-align: center;
+    font-size: 43px;
+    color: #21a251;
+    margin: 20px 0 30px;
+    font-weight: 600;
+}
+
+.whylike {
+    background: #fff;
+    padding: 30px 0 50px;
+}
+.list_reason {
+    border-bottom: 2px solid #f8f8f8;
+    display: table;
+    width: 100%;
+}
+
+.icon_list {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s ease-out;
+}
+
+.first_col .icon_list > i {
+    background-position: 0 0px;
+    width: 84px;
+    height: 104px;
+    margin-top: 45px;
+}
+
+.icon_list > i {
+    background: url(../img/list1.png) no-repeat;
+    display: inline-block;
+}
+
+.p_name {
+    font-size: 16px;
+    color: #393838;
+    margin: 28px 0 15px;
+    text-transform: uppercase;
+}
+
+.p_lead {
+    font-size: 14px;
+    color: #8d8d8d;
+    margin: 0px 50px 20px 50px;
+    padding: 0 12px;
+    text-align: justify;
+}
+
+.second_col .icon_list > i {
+    margin-top: 35px;
+    background-position: -361px 0px;
+    width: 80px;
+    height: 104px;
+}
+
+.list_reason > div {
+    text-align: center;
+}
+.third_col .icon_list > i {
+    margin-top: 20px;
+    background-position: -695px 0;
+    width: 102px;
+    height: 104px;
+}
+.link .a_link {
+    margin: 20px auto 30px auto;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #21a251;
+    width: 260px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 22px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.botton_loiich {
+    padding: 45px 0 0;
+    border-bottom: 2px solid #f8f8f8;
+    display: table;
+    width: 100%;
+}
+
+.sub_des {
+    margin: 0 0 25px;
+    font-size: 16px;
+    color: #303030;
+    text-align: center;
+}
+
+.ul_right {
+    padding: 0 0 0 50px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.ul_right > li {
+    width: 100%;
+    float: left;
+    margin: 0 0 40px;
+}
+
+span.img_lin {
+    display: flex;
+    float: left;
+    width: 110px;
+    height: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img_li {
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.title_li {
+    font-size: 14px;
+    color: #303030;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.lead_li {
+    font-size: 14px;
+    color: #4b4c4c;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.taisaobanthich{
+    padding: 30px 0 50px 0;
+}
+
+.khachhang{
+    padding: 30px 0 50px;
+}
+
+.khachhang .box-header h2 {
+    font-size: 38px;
+    color: #8d8d8d;
+    text-align: center;
+    font-family: 'Roboto_Regular';
+}
+
+.khachhang .box-header h2 span {
+    color: #21a251;
+    font-family: 'Roboto-Bold';
+    font-weight: 600;
+}
+
+.khachhang .box-header .sub-title {
+    text-align: center;
+    font-family: 'Roboto_Regular';
+    /* color: #303030; */
+    font-size: 16px;
+    margin-top: 15px;
+    color: #8d8d8d;
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.khachhang .box-content .panel {
+    position: relative;
+    border: none;
+    box-shadow: none;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.panel .panel-heading {
+    background-color: #FFF;
+    color: #5e5e5e;
+    font-size: 16px;
+    min-height: 145px;
+    border: none;
+}
+
+.khachhang .box-content .fa-quote-left {
+    color: #e2e2e2;
+    margin-right: 15px;
+}
+
+.panel .color_orange {
+    color: #21a251 !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.khachhang .box-content .thumbnail {
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    background: none;
+    border: 1px solid #d2e9b4;
+    padding: 0px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.khachhang .box-content .thumbnail img {
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+    background: none;
+    border: 5px solid #FFF;
+}
+
+.thumbnail > img, .thumbnail a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.donghanh {
+    min-height: 540px;
+    background: url("../img/bg_images.jpg") no-repeat bottom center;
+    background-size: cover;
+}
+
+.donghanh .box-header h2 {
+    margin-top: 70px;
+    font-size: 38px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto_Regular'
+}   
+.donghanh .box-header .sub-title {
+    text-align: center;
+    font-family: 'Roboto_Regular';
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.donghanh .box-content .box-circle {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donghanh .box-content .box-circle .item {
+    color: #FFF;
+    width: 169px;
+    height: 169px;
+    display: block;
+    margin: 0px 60px;
+    padding-top: 65px;
+    border: 1px solid #21a251;
+    border-radius: 50%;
+}
+
+.donghanh .box-content .box-circle .item .top {
+    font-size: 43px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.donghanh .box-content .box-circle .item .bot {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #e2e2e2;
+}
+
+.footer {
+    background-color: #FFF;
+    padding: 35px 0 0px;
+}
+
+.ul_footer {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ul_footer > li {
+    margin: 0 0 15px;
+}
+
+.ul_footer > li > a {
+    font-size: 15px;
+    color: #8d8d8d;
+    /* font-family: 'Roboto_Bold'; */
+
+}
+
+.h3_sub {
+    color: #b1b1b1;
+    font-size: 16px;
+    margin-top: 0px;
+    font-family: 'Roboto-Regular';
+}
+
+.ul_footer .tell {
+    color: #21a251;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+.copyRight {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 16px;
+    background: #21a251;
+        font-size: 14px;
+    color: #FFF;
+}
+
+.social a i{
+    background: #c4c4c4;
+    margin-right: 6px;
+    display: inline-block;
+    color: #7c7c7c;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    margin-right: 10px;
+    color: white;
+}
+
+
+.social a:nth-child(1) i{
+    background-color: #c7322c;
+}
+
+.social a:nth-child(2) i{
+    background-color: #3b5999;
+}
+
+.social a:nth-child(3) i{
+    background-color: #de4b39;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------liên hệ --------------------------- */
+.list_khach {
+    padding: 40px 0;
+}
+.title_contact {
+    font-size: 25px;
+    margin: 0 0 20px;
+    color: #565656;
+}
+.form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.form-horizontal .control-label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+}
+.input_controll {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    color: #292929;
+    font-size: 14px;
+    margin: 0;
+    overflow: visible;
+    padding: 8px 12px;
+    width: 100%;
+}
+.btnRed {
+    background: #21a251;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 80px;
+    text-transform: uppercase;
+}
+
+.name_vp {
+    color: #21a251;
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.mecash {
+    background: #ccc;
+    padding: 95px 0;
+    text-align: center;
+    color: #fff;
+}
+.mecash .whylike_title {
+    font-size: 42px;
+    color: #21a251;
+}
+.whylike_title {
+    text-align: center;
+    font-size: 43px;
+    color: #190c0c;
+    margin: 0px 0 50px;
+}
+.btn-white {
+    background: #21a251;
+    height: 74px;
+    color: #fff!important;
+    font-size: 33px;
+    font-weight: 600;
+    padding: 0 27px!important;
+    line-height: 72px!important;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------khuyến mại ----------------------------- */
+#main-details {
+    background-color: #f5f5f5;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#main-details .lead {
+    font-size: 21px;
+    color: #666;
+}
+
+#main-details h2{
+    margin: 20px 0 10px 0;
+    font-size: 30px;
+    line-height: 1.1;
+    color: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #707070;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------điều khoản ----------------- */
+#main-slogan .btn-submit {
+    margin: 20px auto;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #21a251;
+    width: 260px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 22px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#main-slogan {
+    background: #FFFFFF;
+    margin-top: 40px;
+    min-height: 180px;
+}
+#main-slogan h2 {
+    font-size: 28px;
+    font-family: Roboto-Regular;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------thanh toán ---------------------- */
+.list_khach {
+    padding: 40px 0;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.list_khach h3{
+    font-weight: 600;
+    color: #666666;
+    margin: 20px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------Hợp tác đầu tư ---------------------- */
+.baiviet-nhu-fb{
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding:20px 10px;
+}
+
+.avt-ban-dang-nghi-gi{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avt-ban-dang-nghi-gi a img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.ban_dang_nghi_gi{
+    display: grid;
+    grid-template-columns: 50px 420px;
+    align-items: center;
+}
+
+.nut-ban-dang-nghi-gi{
+    padding: 10px 25px;
+    background: #F0F2F5;
+    border-radius: 50px;
+}
+
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h5{
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nut-ban-dang-nghi-gi-modal span select{
+    font-size: 13px;
+    background: #e0e0e0;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.text-ban_dang_nghi_gi{
+    margin-top: 20px;
+}
+
+.text-ban_dang_nghi_gi textarea{
+    display: block;
+    width: 100%;
+    height: 130px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.text-ban_dang_nghi_gi textarea:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.nut-ban-dang-nghi-gi-modal {
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------tinh năng ------------------ */
+#main-details {
+    background-color: #f5f5f5;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#main-details .menu-left {
+    background-color: #FFF;
+}
+#main-details .menu-left ul {
+    margin: 0px;
+    padding: 0px;
+}
+#main-details .menu-left ul li.active {
+    border: 1px solid #21a251 !important;
+    position: relative;
+}
+#main-details .menu-left ul li {
+    list-style: none;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+#main-details .menu-left ul li:first-child {
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+#main-details .menu-left ul li.active a {
+    background-color: #21a251;
+    color: #FFF;
+}
+
+#main-details .menu-left ul li a {
+    color: #383838;
+    font-size: 14px;
+    padding: 6px 30px;
+    display: block;
+    text-decoration: none;
+    height: 39px;
+}
+
+#main-details .menu-left ul li a:hover {
+    color: #21a251;
+}
+/* orm-control-static
+#main-details .menu-left ul li.active:after {
+    content: '';
+    display: block;
+    height: 41px;
+    width: 20px;
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    background: url("https://mecash.vn/Content/images/bg_after_left.png") center center;
+} */
+
+#main-details .box-news-list {
+    background-color: #FFF;
+    border: 1px solid #d4d4d4;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#main-details .box-news-list .list-items {
+    display: table;
+    width: 100%;
+    min-height: 170px;
+    padding-top: 25px;
+    position: relative;
+}
+#main-details .box-news-list .readmore {
+    display: block;
+    width: 80px;
+    height: 28px;
+    color: #fff;
+    background-color: #21a251;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+}
+#main-details .box-news-list .list-items .title-news-item {
+    margin-top: 0px;
+}
+
+#main-details .box-news-list .list-items .title-news-item h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+#main-details .box-news-list .list-items .title-news-item a {
+    color: #21a251;
+    font-size: 18px;
+    font-family: 'Roboto-Regular';
+}
+
+#main-details .box-news-list .list-items + .list-items {
+    border-top: 1px solid #d4d4d4;
+}
+
+.description-news-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+#main-details .menu-left ul li + li {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------chi tiết bài viết ------------------------ */
+.list_tinhnang h1 {
+    font-weight: 600;
+    color: #666666;
+
+}
+
+.list_tinhnang p, .list_tinhnang li {
+    color: #565656;
+    font-size: 14px;
+    line-height: 26px;
+}
+.list_tinhnang h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+    margin: 20px 0 10px 0;
+}
+
+#MenuTinhNang .active:hover a{
+    color: white !important;
+}
+
+#tinh-nang a{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.khung-anh-4{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.khung-anh-4 img{
+    width: 100%;
+    height: 395px;
+}
+
+
+.noidung-baiviet-hop_tac p{
+    line-height: 27px;
+}
+
+.text-noidung-baiviet-hop_tac{
+    position: relative;
+    height: 77px;
+    overflow: hidden;
+}
+
+.sum-noidung-ban-dang-nghi-gi .ban_dang_nghi_gi{
+    margin-bottom: 10px;
+}
+
+.xemfull .text-noidung-baiviet-hop_tac{
+    height: 100% !important;
+}
+.xemfull .xemthem{
+    display: none !important;
+}
+
+.xemthem{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.binhluan{
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+}
+
+.name-user{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hienlen{
+    display: block !important;
+}
+
+.nd_binh_luan{
+    display: flex;
+    flex-direction: column;gap: 10px;
+    display: none;
+}
+
+.form-gui-bìnhluan{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.nd_binh_luan .nut-ban-dang-nghi-gi-modal{
+    padding: 5px 10px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+}
+
+.gui_binh_luan{
+    width: 150px;
+    display: block;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: rgb(9, 179, 247);
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+
+
+
+
+
+

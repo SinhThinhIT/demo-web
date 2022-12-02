@@ -1,0 +1,169 @@
+@media (min-width:1770px) /* lg*/ {
+    .container{
+     max-width: 1650px;
+     padding: 0;
+     width: 95%;
+     }
+ }
+ @media (min-width:1500px) and (max-width:1769px)/* md*/{
+    .container{
+     max-width: 1400px;
+     padding: 0;
+     width: 95%;
+ 
+     }
+ }
+ @media (min-width:1200px) and (max-width:1499px)/* md*/{
+    .container{
+     max-width: 1150px;
+     padding: 0;
+     width: 95%;
+ 
+     }
+ }
+
+@media (min-width:992px) and (max-width:1199px) /* md*/{
+    
+}
+
+@media (min-width: 1025px){
+    .menu_footer {
+        position: relative;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px) /* sm*/{
+   
+}
+
+@media (max-width:767px) /* xs*/{
+    .lead {
+        font-size: 21px !important;
+        margin-bottom: 0 !important;
+    }
+    .nav-menu > .menu-item.is-active > .menu-link {
+        color: #ffffff !important;
+    }
+
+    .menu_mb .dangky-dangnhap {
+        position: fixed;
+        top: 13px;
+        left: 15px;
+    }
+
+    .ul_right {
+        padding: 0 0 0 0px !important;
+    }
+    .p_lead {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .list-unstyled{
+        padding-bottom: 50px;
+    }
+
+    .bg_nabar_top {
+        min-height: 0 !important;
+    }
+
+    #main-details embed{
+        height: 350px !important;
+    }
+    .menu_header {
+        padding-top: 0 !important;
+    }
+
+    .donghanh .box-header h2 {
+        font-size: 24px !important;
+    }
+
+    .donghanh .box-content .box-circle .item {
+        margin: 0 !important;
+    }
+
+    .banner .box-header h3 {
+        font-size: 19px;
+        color: #1a1a1e;
+        line-height: 30px;
+        margin-top: 26px;
+        text-align: center;
+    }
+
+    .banner .box-content .box-list-about ul li {
+        padding-left: 1em;
+        text-indent: -0.7em;
+        list-style: disc;
+    }
+    .banner .box-list-about ul .btn-submit {
+        margin: 20px auto;
+    }
+
+    .whylike_title {
+        text-align: center;
+        font-size: 26px !important;
+        margin: 46px 0 0px !important;
+    }
+    .icon_list {
+        height: 140px !important;
+    }
+
+    .khachhang .box-header h2 {
+        font-size: 20px !important;
+    }
+
+    .donghanh .box-content .box-circle .item {
+        width: 145px !important;
+        height: 145px !important;
+    }
+    .donghanh .box-content .box-circle {
+        gap: 25px;
+    }
+    .donghanh .box-content .box-circle {
+        height: 205px !important;
+    }
+
+    .mecash {
+        padding: 50px 0 !important;
+    }
+
+    .whylike_title, .mecash .whylike_title {
+        font-size: 33px !important;
+        margin: 0px 0 50px !important;
+    }
+
+    .btn-green, .btn-white {
+        font-size: 22px !important;
+        line-height: 60px!important;
+    }
+
+    #main-details .menu-left ul {
+        display: grid;
+        grid-template-columns: auto auto !important;
+    }
+    .ul_footer > li > a {
+        font-family: revert !important;
+    }
+    .btnRed {
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        padding: 10px 20px !important;
+    }
+
+    .ban_dang_nghi_gi {
+        grid-template-columns: 50px auto !important;
+    }
+
+    .img-anh-noidung-baiviet-hop-tac.khung-anh-4 img{
+        height: 155px !important;
+    }
+}
+
+@media (max-width:480px) {
+   
+
+}
+
+.visible-480{
+    display: none;
+}
